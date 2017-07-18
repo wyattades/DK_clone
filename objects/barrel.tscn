@@ -5,9 +5,12 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 10, 10 )
+extents = Vector2( 16.3102, 10.8582 )
 
-[node name="barrel" type="RigidBody2D"]
+[node name="barrel" type="RigidBody2D" groups=[
+"solid",
+"danger",
+]]
 
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
@@ -19,7 +22,7 @@ mode = 0
 mass = 1.0
 friction = 1.0
 bounce = 0.0
-gravity_scale = 4.0
+gravity_scale = 8.0
 custom_integrator = false
 continuous_cd = 0
 contacts_reported = 0

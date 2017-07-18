@@ -7,7 +7,9 @@
 custom_solver_bias = 0.0
 extents = Vector2( 40.3931, 41.4141 )
 
-[node name="platform" type="StaticBody2D"]
+[node name="platform" type="StaticBody2D" groups=[
+"solid",
+]]
 
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
@@ -20,14 +22,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="collision" type="CollisionShape2D" parent="."]
 
 transform/scale = Vector2( 6.34515, 1.56102 )
 shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="sprite" type="Sprite" parent="."]
 
 transform/scale = Vector2( 4, 4 )
 texture = ExtResource( 1 )

@@ -1,11 +1,24 @@
 [gd_scene load_steps=3 format=1]
 
 [ext_resource path="res://gui/menu.tscn" type="PackedScene" id=1]
-[ext_resource path="res://gui/main_menu.gd" type="Script" id=2]
+[ext_resource path="res://gui/game_win.gd" type="Script" id=2]
 
 [node name="menu" instance=ExtResource( 1 )]
 
 script/script = ExtResource( 2 )
+
+[node name="main_button" parent="."]
+
+text = "PLAY AGAIN?"
+
+[node name="title" parent="axis"]
+
+text = "YOU WIN!"
+
+[node name="subtitle" parent="axis"]
+
+visibility/visible = false
+text = ""
 
 [connection signal="pressed" from="main_button" to="." method="_on_main_button_pressed"]
 
