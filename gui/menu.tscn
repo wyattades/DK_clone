@@ -35,6 +35,23 @@ shortcut = null
 text = "START"
 flat = false
 
+[node name="quit_button" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+theme/theme = SubResource( 1 )
+margin/left = 691.0
+margin/top = 889.0
+margin/right = 1218.0
+margin/bottom = 984.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "QUIT"
+flat = false
+
 [node name="axis" type="Node2D" parent="."]
 
 transform/pos = Vector2( 929.278, 327.179 )

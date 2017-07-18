@@ -1,6 +1,6 @@
 extends Node2D
 
-const I_SPEED = 400
+const I_SPEED = 500
 
 var barrel = preload("res://objects/barrel.tscn")
 

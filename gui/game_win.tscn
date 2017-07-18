@@ -22,4 +22,6 @@ text = ""
 
 [connection signal="pressed" from="main_button" to="." method="_on_main_button_pressed"]
 
+[connection signal="pressed" from="quit_button" to="." method="_on_quit_button_pressed"]
+
 
