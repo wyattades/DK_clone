@@ -5,10 +5,11 @@ var currentScene = null
 var globals = {}
 
 func _ready():
-	currentScene = get_tree().get_root().get_child(get_tree().get_root().get_child_count() - 1)
+	var root = get_tree().get_root()
+	currentScene = root.get_child(root.get_child_count() - 1)
 	
 func set_scene(scene):
-	if (currentScene != null): currentScene.queue_free()
+	currentScene.queue_free()
 	var new_scene = load(scene)
 	currentScene = new_scene.instance()
 	get_tree().get_root().add_child(currentScene)
